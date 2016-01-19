@@ -10,6 +10,10 @@ namespace Adapter
     {
         static void Main(string[] args)
         {
+            ITarget[] objs={new Target(),new Adapter(new Adaptee())};
+            objs[0].Request();
+            objs[1].Request();
+            Console.ReadKey(true);
         }
     }
 }

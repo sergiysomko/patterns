@@ -10,7 +10,8 @@ namespace Singleton
     {
         static void Main(string[] args)
         {
-
+            Singelton s = Singelton.GetInstance();
+            Singelton s2 = Singelton.GetInstance();
         }
     }
 }
